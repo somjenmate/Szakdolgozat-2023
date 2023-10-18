@@ -1,0 +1,238 @@
+body
+{
+    background-image: url('../img/hatter_kesz.png');
+    background-repeat: repeat;
+}
+
+.outdiv
+{
+    height: 56.25vh;
+    margin-top: 16.875vh;
+    margin-bottom: 16.875vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.rightdiv
+{
+    background-color: #52796f;
+    display: table;
+}
+
+.wrap
+{
+    height: 100%;
+}
+
+.h3_last, .h5_last
+{
+    color: white;
+}
+
+a:link, a:visited, a:hover, a:active
+{
+    color: #52796f;
+    text-decoration: none;
+}
+
+.input-group {
+    position: relative;
+}
+   
+.input {
+    border: solid 2px #52796f;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #52796f;
+}
+   
+.user-label {
+    position: absolute;
+    left: 15px;
+    color: #52796f;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+   
+.input:focus, input:valid {
+    outline: none;
+    border: solid 2px #52796f;
+}
+   
+.input:focus ~ label, input:valid ~ label, .user-label-2 {
+    transform: translateY(-50%) scale(0.8);
+    background-color: white;
+    padding: 0 .2em;
+    color: #52796f;
+}
+
+.input-2 {
+    border: solid 2px white;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #52796f;
+}
+   
+.user-label-2 {
+    position: absolute;
+    left: 15px;
+    color: #52796f;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+   
+.input-2:focus, input:valid {
+    outline: none;
+    border: solid 2px #52796f;
+}
+   
+.input-2:focus ~ label, input:valid ~ label, .user-label-2 {
+    transform: translateY(-50%) scale(0.8);
+    background-color: white;
+    padding: 0 .2em;
+    color: #52796f;
+}
+
+.buttonlook1 {
+    padding: 2vh;
+    font-size: 1rem;
+    border: none;
+    background-color: #52796f;
+    transition: all .3s ease;
+    box-shadow: #335b51 0px 10px 0px 0px;
+    color: white;
+}
+   
+.buttonlook1:hover {
+    box-shadow: #335b51 0px 7px 0px 0px;
+}
+   
+.buttonlook1:active {
+    background-color: #52796f;
+    box-shadow: #335b51 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+
+.buttonlook2 {
+    padding: 2vh;
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+    transition: all .3s ease;
+    box-shadow: rgb(222, 222, 222) 0px 10px 0px 0px;
+    color: #52796f;
+}
+   
+.buttonlook2:hover {
+    box-shadow: rgb(222, 222, 222) 0px 7px 0px 0px;
+}
+   
+.buttonlook2:active {
+    background-color: white;
+    box-shadow: rgb(222, 222, 222) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+
+
+.copyright_img{
+    width: 3%;
+}
+
+.footerdiv{
+    background-color: #52796f;
+    height: 10vh;
+    color: white;
+    opacity: 90%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+}
+
+.backbutton {
+    width: 30%;
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+    transition: all .3s ease;
+    box-shadow: rgb(222, 222, 222) 0px 10px 0px 0px;
+    color: #52796f;
+    font-weight: bold;
+}
+   
+.backbutton:hover {
+    box-shadow: rgb(222, 222, 222) 0px 7px 0px 0px;
+}
+   
+.backbutton:active {
+    background-color: white;
+    box-shadow: rgb(222, 222, 222) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+
+#alertBox {
+    display: none;
+    background-color: white;
+    color: #52796f;
+    position: absolute;
+    width: 350px;
+    border-radius: 5px;
+    border: 2px solid #52796f;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: 20px;
+    z-index: 10;
+    padding: 16px 8px 8px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px lightgray;
+    text-align: center;
+}
+
+.yes
+{
+    width: 100px;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width:1150px)
+{
+    .backbutton{
+        width: 55%;
+        margin-bottom: 0.25rem;
+    }
+    .footerdiv{
+        height: 15vh;
+    }
+}
+@media only screen and (max-width:650px)
+{
+    .backbutton{
+        font-size: 0.5rem;
+    }
+    .footerdiv{
+        font-size: 0.6rem;
+        height: 7.5vh;
+    }
+}
+
+@media only screen and (min-height:780px)
+{
+    .outdiv
+    {
+        height: 40vh;
+        margin-top: 30vh;
+        margin-bottom: 30vh;
+    }
+    .footerdiv{
+        height: 7.5vh;
+    }
+}

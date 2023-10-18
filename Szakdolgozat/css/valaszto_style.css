@@ -1,0 +1,181 @@
+body {
+    background-image: url('../img/hatter_kesz.png');
+    background-repeat: repeat;
+}
+
+#outterdiv {
+    height: 55vh;
+    margin-top: 17.5vh;
+    margin-bottom: 17.5vh;
+    display: flex;
+}
+
+img {
+    width: 25%;
+}
+
+.left_right {
+    border: none;
+    background-color: white;
+    transition: all .3s ease;
+    box-shadow: rgb(222, 222, 222) 0px 10px 0px 0px;
+}
+   
+.left_right:hover {
+    box-shadow:  rgb(222, 222, 222) 0px 7px 0px 0px;
+}
+   
+.left_right:active {
+    background-color: white;
+    box-shadow: rgb(222, 222, 222) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+
+.center {
+    border: none;
+    background-color: #52796f;
+    transition: all .3s ease;
+    box-shadow: #335b51 0px 10px 0px 0px;
+}
+   
+.center:hover {
+    box-shadow:  #335b51 0px 7px 0px 0px;
+}
+   
+.center:active {
+    background-color: #52796f;
+    box-shadow: #335b51 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+
+.copyright_img{
+    width: 3%;
+}
+
+.footerdiv{
+    background-color: #52796f;
+    height: 10vh;
+    color: white;
+    opacity: 90%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+}
+
+.backbutton {
+    width: 30%;
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+    transition: all .3s ease;
+    box-shadow: rgb(222, 222, 222) 0px 10px 0px 0px;
+    color: #52796f;
+    font-weight: bold;
+}
+   
+.backbutton:hover {
+    box-shadow: rgb(222, 222, 222) 0px 7px 0px 0px;
+}
+   
+.backbutton:active {
+    background-color: white;
+    box-shadow: rgb(222, 222, 222) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+
+.tanulok_megjelenites
+{
+    display: inline;
+    position: absolute;
+    top: 0;
+    width: 90vw;
+    left: 5vw;
+    right: 5vw;
+    z-index: 9;
+}
+
+.tanulok_hidden
+{
+    display: none;
+}
+
+.accordion-button::after
+{
+    display: none;
+}
+
+.outdiv2
+{
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+input[type=button] {
+    border-radius: 15px;
+    padding: 2%;
+    font-size: 16px;
+    border: none;
+    background-color: #52796f;
+    color: white;
+    transition: all .3s ease;
+    box-shadow: #335b51 0px 10px 0px 0px;
+}
+   
+input[type=button]:hover {
+    box-shadow: #335b51 0px 7px 0px 0px;
+}
+   
+input[type=button]:active {
+    background-color: #52796f;
+    box-shadow: #335b51 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+
+@media only screen and (max-width:1150px)
+{
+    .backbutton {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:1000px)
+{
+    #outterdiv
+    {
+        display: inline;
+    }
+
+    .gomb_kepek{
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width:900px)
+{
+    .backbutton {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:600px)
+{
+    .backbutton {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:600px)
+{
+    .backbutton {
+        font-size: 0.5rem;
+        height: 10%;
+    }
+}
